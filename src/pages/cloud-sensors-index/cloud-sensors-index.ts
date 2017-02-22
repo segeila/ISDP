@@ -122,4 +122,8 @@ export class CloudSensorsIndexPage {
     }, 2000);
   }
 
+  roundValue(value) {
+    return Math.round(value);
+  }
+
 }
