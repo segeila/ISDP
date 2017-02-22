@@ -17,8 +17,9 @@
   Used for layout testing. Start.
 -->
   <ion-list>
+    <ion-list-header class="header">Devices</ion-list-header>
     <ion-item *ngFor="let device of devices" (click)="pushPage()">
-      {{ device }}
+      <span class="name">{{ device }}</span>
     </ion-item>
   </ion-list>
   <!--

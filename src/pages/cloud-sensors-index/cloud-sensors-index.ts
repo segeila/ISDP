@@ -11,7 +11,7 @@ import {DomSanitizer} from "@angular/platform-browser";
 export class CloudSensorsIndexPage {
 
   sensors: any = [];
-  units: any = [['°C', '%'], ['hPa', 'Hz']];
+  units: any = [['°C', '%'], ['mb', 'Hz']];
   gradient: any;
   icons: any = [['thermometer', 'water'],['speedometer', 'megaphone']];
   loader: any;

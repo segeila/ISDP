@@ -13,9 +13,10 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class TestValuesPage {
 
-  sensors = [{name:'Temperature', value:'23.6'},{name:'Humidity', value:'56'},{name:'Pressure', value:'1031'},{name:'Loudness', value:'73'}];
-  icons = ['thermometer', 'water', 'speedometer', 'megaphone'];
-  units = ['°C', '%', 'hPa', 'Hz'];
+  sensors = [{name:'Temperature', value:'23.6'},{name:'Humidity', value:'56'},{name:'Pressure', value:'1031'},{name:'Loudness', value:'73'},
+    {name:'CO2', value:'983'}, {name:'CO', value:'21'}, {name: 'Smoke', value:''}, {name:'Ethanol', value:'718'}, {name:'NOx', value: '43'}];
+  icons = ['thermometer', 'water', 'speedometer', 'megaphone', 'cloud', 'cloud-outline', 'flame', 'analytics', 'cloudy'];
+  units = ['°C', '%', 'mb', 'Hz', 'ppm', 'ppm', 'ppm', 'ppm', 'ppm'];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 

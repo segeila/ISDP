@@ -31,9 +31,9 @@ export class HomePage {
     this.navCtrl.push(ControlPage);
   }
 
-  makeRoot(){
+  pushBT(){
     // this.navCtrl.setRoot(BluetoothDevicesListPage);
-    this.navCtrl.setRoot(TestDeviceListPage);
+    this.navCtrl.push(TestDeviceListPage);
   }
 
 }
