@@ -1,5 +1,5 @@
 <!--
-  Generated template for the TestDeviceList page.
+  Generated template for the TestValues page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,18 +7,19 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>TestDeviceList</ion-title>
+    <ion-title>TestValues</ion-title>
   </ion-navbar>
 
 </ion-header>
+
 
 <ion-content padding>
   <!--
   Used for layout testing. Start.
 -->
   <ion-list>
-    <ion-item *ngFor="let device of devices" (click)="pushPage()">
-      {{ device }}
+    <ion-item *ngFor="let sensor of sensors; let i = index">
+      <ion-icon name={{icons[i]}} class="ic"></ion-icon>{{sensor.name}}<ion-note item-right>{{sensor.value}}{{units[i]}}</ion-note>
     </ion-item>
   </ion-list>
   <!--

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {TestValuesPage} from "../test-values/test-values";
 
 /*
   Generated class for the TestDeviceList page.
@@ -19,6 +20,10 @@ export class TestDeviceListPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TestDeviceListPage');
+  }
+
+  pushPage(){
+    this.navCtrl.push(TestValuesPage);
   }
 
 }

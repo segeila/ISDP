@@ -10,6 +10,7 @@ import {ControlPage} from "../pages/control/control";
 import {IntroSlidesPage} from "../pages/intro-slides/intro-slides";
 import {BluetoothSensorsListPage} from "../pages/bluetooth-sensors-list/bluetooth-sensors-list";
 import {TestDeviceListPage} from "../pages/test-device-list/test-device-list";
+import {TestValuesPage} from "../pages/test-values/test-values";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {TestDeviceListPage} from "../pages/test-device-list/test-device-list";
     ControlPage,
     IntroSlidesPage,
     BluetoothSensorsListPage,
-    TestDeviceListPage
+    TestDeviceListPage,
+    TestValuesPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -36,7 +38,8 @@ import {TestDeviceListPage} from "../pages/test-device-list/test-device-list";
     ControlPage,
     IntroSlidesPage,
     BluetoothSensorsListPage,
-    TestDeviceListPage
+    TestDeviceListPage,
+    TestValuesPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Data]
 })

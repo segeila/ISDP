@@ -71,6 +71,7 @@ export class CloudSensorsGraphPage {
             //"usePlotGradientColor": "1",
             //Setting the gradient formation color
             //"plotGradientColor": "#1aaf5d",
+            "anchorAlpha": "0",
             "showXAxisLine": "1",
             "axisLineAlpha": "25",
             "divLineAlpha": "10",
